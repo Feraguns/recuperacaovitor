@@ -1,0 +1,51 @@
+package br.edu.univas.exercicios;
+
+import java.util.Scanner;
+
+public class questão1 {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+		
+		int[] numerosdavenda = new int[150];
+		
+		for (int i = 0; i < 150; i++) {
+			System.out.println("Por favor, digite o número da venda:");
+			int numerodavenda = leitura.nextInt();
+			
+			while (numerodavenda < 1 || numerodavenda < 150) {
+				System.out.println("menor venda");
+				
+				numerodavenda = leitura.nextInt();
+			}
+			
+			numerosdavenda[i] = numerodavenda;
+		}
+		
+		int[] vendasdia = new int[150];
+		
+		for (int i = 0; i < 150; i++) {
+			System.out.println("Por favor, digite o número da venda:");
+			int numerodasvendas = leitura.nextInt();
+			
+			while (numerodasvendas < 1 || numerodasvendas > 150) {
+				System.out.println("Maior venda.");
+				
+				numerodasvendas = leitura.nextInt();
+			}
+			
+			vendasdia[i] = numerodasvendas;
+		}
+		
+		int quantidadevendas = 0;
+		
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < 6; j++) {
+				int[] numerodasvendas;
+
+
+					quantidadevendas++;
+					break;
+				}
+			}
+		}
